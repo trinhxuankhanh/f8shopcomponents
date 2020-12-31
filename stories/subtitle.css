@@ -1,0 +1,9 @@
+.footer-item__link {
+    text-decoration: none;
+    font-size: 1.2rem;
+    color: #737373;
+    display: block;
+    padding: 5px 0;
+    display: flex;
+    align-items: center;
+}
