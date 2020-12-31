@@ -1,0 +1,27 @@
+.home-filter__btn {
+    margin-right: 12px;
+    min-width: 90px;
+}
+
+.btn{
+    min-width: 100px;
+    height: 34px;
+    text-decoration: none;
+    border: none;
+    border-radius: 2px;
+    font-size: 1.5rem;
+    padding: 0 12px;
+    outline: none;
+    cursor: pointer;
+    color: black;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    line-height: 1.6rem;
+    background-color: #fff;
+}
+
+.btn.btn--primary{
+    background-color: #ee4d2d;
+    color: #fff;
+}
