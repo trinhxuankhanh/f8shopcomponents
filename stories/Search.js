@@ -61,3 +61,13 @@ export const Search = (props) => {
     </div>
   );
 };
+
+Search.propTypes = {
+  histories: PropTypes.array.isRequired,
+  selects: PropTypes.array.isRequired
+}
+
+Search.defaultProps = {
+  histories: [],
+  selects: []
+};

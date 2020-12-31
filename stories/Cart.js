@@ -37,3 +37,19 @@ export const Cart = (props) => {
     </div>
   );
 };
+
+Cart.propTypes = {
+  src: PropTypes.string.isRequired,
+  alt: PropTypes.string.isRequired,
+  number: PropTypes.number.isRequired,
+  isShow: PropTypes.bool.isRequired,
+  products: PropTypes.array.isRequired
+}
+
+Cart.defaultProps = {
+  src: "",
+  alt: "",
+  number: 0,
+  isShow: false,
+  products: []
+};

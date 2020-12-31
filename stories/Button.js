@@ -1,4 +1,5 @@
 import React from "react";
+import PropTypes from "prop-types";
 import "./button.css";
 
 export const Button = (props) => {
@@ -13,4 +14,14 @@ export const Button = (props) => {
       {title}
     </button>
   );
+};
+
+Button.propTypes = {
+  title: PropTypes.string.isRequired,
+  primary: PropTypes.bool.isRequired
+}
+
+Button.defaultProps = {
+  title: "",
+  primary: false
 };

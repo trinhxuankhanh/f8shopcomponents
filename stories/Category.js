@@ -26,3 +26,11 @@ export const Category = (props) => {
     </nav>
   );
 };
+
+Category.propTypes = {
+  selects: PropTypes.array.isRequired
+}
+
+Category.defaultProps = {
+  selects: []
+};

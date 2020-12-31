@@ -1,4 +1,5 @@
 import React from "react";
+import PropTypes from "prop-types";
 import "./cartitem.css";
 export const CartItem = (props) => {
   const { src, alt, title, price, size, quantity, type } = props;
@@ -22,4 +23,24 @@ export const CartItem = (props) => {
       </div>
     </li>
   );
+};
+
+CartItem.propTypes = {
+  src: PropTypes.string.isRequired,
+  alt: PropTypes.string.isRequired,
+  title: PropTypes.string.isRequired,
+  price: PropTypes.string.isRequired,
+  size: PropTypes.string.isRequired,
+  quantity: PropTypes.number.isRequired,
+  type: PropTypes.string.isRequired,
+}
+
+CartItem.defaultProps = {
+  src: "",
+  alt: "",
+  title: "",
+  price: "",
+  size: "",
+  quantity: 0,
+  type: "",
 };

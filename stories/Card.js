@@ -1,4 +1,5 @@
 import React from "react";
+import PropTypes from "prop-types";
 import "./card.css";
 
 export const Card = (props) => {
@@ -60,4 +61,26 @@ export const Card = (props) => {
       </div>
     </a>
   );
+};
+
+Card.propTypes = {
+  title: PropTypes.string.isRequired,
+  src: PropTypes.string.isRequired,
+  price: PropTypes.string.isRequired,
+  discount: PropTypes.string.isRequired,
+  saled: PropTypes.string.isRequired,
+  branch: PropTypes.string.isRequired,
+  from: PropTypes.string.isRequired,
+  numberDisCount: PropTypes.number.isRequired,
+}
+
+Card.defaultProps = {
+  title: "",
+  src: "",
+  price: "",
+  discount: "",
+  saled:"",
+  branch: "",
+  from: "",
+  numberDisCount:0,
 };
