@@ -1,4 +1,5 @@
 import React from "react";
+import PropTypes from "prop-types";
 import "./subtitle.css";
 
 export const SubTitle = (props) => {
@@ -7,4 +8,13 @@ export const SubTitle = (props) => {
       {props.sub}
     </a>
   );
+};
+
+SubTitle.propTypes = {
+  sub: PropTypes.string.isRequired
+}
+
+
+SubTitle.defaultProps = {
+  sub:""
 };

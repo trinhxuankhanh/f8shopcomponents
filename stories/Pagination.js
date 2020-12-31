@@ -1,4 +1,5 @@
 import React from "react";
+import PropTypes from "prop-types";
 import "./pagination.css";
 
 export const Panigation = (props) => {
@@ -34,4 +35,13 @@ export const Panigation = (props) => {
       </li>
     </ul>
   );
+};
+
+Panigation.propTypes = {
+  panies: PropTypes.array.isRequired
+}
+
+
+Panigation.defaultProps = {
+  panies:[]
 };
